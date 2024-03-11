@@ -1,0 +1,15 @@
+.smaller-box {
+    width: 90%;
+    transition: 1s ease-in-out;
+    border-radius: 30px;
+}
+
+.full-box {
+    width: 100%;
+    border-radius: 0px;
+}
+
+video {
+    border-radius: 0px;
+    width: 100%;
+}
