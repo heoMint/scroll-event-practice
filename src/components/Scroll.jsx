@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './style.css';
 
 const Scroll = () => {
+    // 스크롤의 초기값 설청
     const [scroll, setScroll] = useState(0);
-
+    // 윈도우의 현재 스크롤 위치를 알아내고 scroll에 저장하는 함수
     const updateScroll = () => {
         setScroll(window.scrollY);
-        console.log(window.scrollY);
-    };
 
+    };
+    // 스크롤할 때마다 updateScroll 함수가 호출되어 현재 스크롤 위치를 scroll 상태에 업데이트 및 제거
     useEffect(() => {
         window.addEventListener('scroll', updateScroll);
         return () => {
